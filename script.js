@@ -45,7 +45,15 @@ function browserLinks(x){
 
 // carousel component
 
-
+const buttons = document.querySelectorAll("[data-button]");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+  const offset = button.dataset.button === "next" ? 1 : -1;
+  const slides = document.querySelectorAll("[data-slides]");
+  const activeSlide = slides.querySelector("[data-active]");
+  let newIndex
+})
+});
 
 
 

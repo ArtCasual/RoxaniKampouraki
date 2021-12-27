@@ -257,10 +257,11 @@ main button:hover {
   align-items: center;
   justify-content: space-evenly;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.7);
+  background-color: rgba(217, 168, 101, 0.8);
   padding: 2.5em;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 10px 10px 8px #888888;
 }
 
 .AKINHTA h2 {
@@ -276,9 +277,10 @@ main button:hover {
   justify-content: space-evenly;
   text-align: center;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.7);
+  background-color: rgba(217, 168, 101, 0.8);
   padding: 2.5em;
   border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
 }
 .ΚΛΗΡΟΝΟΜΙΕΣ li {
   transform: translateX(-5%);
@@ -291,9 +293,10 @@ main button:hover {
   justify-content: space-evenly;
   text-align: center;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.7);
+  background-color: rgba(217, 168, 101, 0.8);
   padding: 2.5em;
   border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
 }
 .ΝΟΜΙΚΕΣΥΠΗΡΕΣΙΕΣ li {
   transform: translateX(-5%);
@@ -304,22 +307,27 @@ main button:hover {
 }
 
 .carousel__btn {
-  background-color: transparent;
+  font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  padding-top: 0.5rem;
   box-shadow: none;
   border: none;
-  width: 10px;
   z-index: 20;
   position: absolute;
   display: none;
   cursor: pointer;
+  transform: translateY(50%);
+}
+.carousel__btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .prev {
-  left: 3%;
-  transform: scale(3);
+  /* left: 3%; */
+  left: 5%;
 }
 .next {
-  right: 10%;
-  transform: scale(3);
+  right: 5%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -336,6 +344,13 @@ main button:hover {
   }
   .AKINHTA {
     z-index: 1;
+  }
+
+  .slide {
+    opacity: 0;
+  }
+  .slide[data-active] {
+    opacity: 1;
   }
 
   .carousel__btn {
