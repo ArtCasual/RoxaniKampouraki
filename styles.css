@@ -46,8 +46,8 @@ footer p {
 }
 @media only screen and (max-width: 400px) {
   header {
-    font-size: 60%;
-    line-height: 17px;
+    font-size: 50%;
+    line-height: 15px;
   }
   header img {
     transform: scale(0.6) translateX(-10px);
@@ -226,11 +226,17 @@ main button:hover {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   #ΑΡΧΙΚΗ .txtHero {
-    font-size: 100%;
+    font-size: 90%;
+  }
+
+  main button {
+    font-size: small;
+    margin-top: 1em;
   }
 }
+
 /*  */
 /*  */
 
@@ -381,8 +387,8 @@ main button:hover {
   text-align: center;
   border-bottom: 2px solid black;
   padding: 1em;
-  padding-top: 6em;
-  margin-bottom: 3em;
+  padding-top: 5em;
+  margin-bottom: 2em;
 }
 
 .info {
@@ -555,6 +561,7 @@ iframe {
   }
   .leftTitles {
     margin-top: 5em;
+    margin-left: 9%;
     font-size: 70%;
   }
   .rightTitles a::after {
@@ -591,8 +598,8 @@ iframe {
 }
 @media only screen and (max-width: 400px) {
   footer {
-    font-size: 60%;
-    line-height: 17px;
+    font-size: 50%;
+    line-height: 15px;
   }
   footer img {
     transform: scale(0.6) translateX(-10px);
