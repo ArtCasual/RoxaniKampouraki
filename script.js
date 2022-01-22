@@ -64,4 +64,6 @@ buttons.forEach(button => {
 });
 
 
-
+const checkArray = ["cheesburger","pizza","fries"];
+[cheese,pizza]= checkArray;
+console.log(cheese);
