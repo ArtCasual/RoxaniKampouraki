@@ -205,7 +205,7 @@ main button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  margin-top: 2em;
+  margin-top: 1em;
   position: absolute;
   transform: translateX(-50%);
 }
@@ -218,7 +218,7 @@ main button:hover {
 
 @media only screen and (max-width: 700px) {
   #ΑΡΧΙΚΗ .txtHero {
-    font-size: 120%;
+    font-size: 110%;
   }
   main button {
     font-size: small;
@@ -336,13 +336,17 @@ main button:hover {
   right: 5%;
 }
 
+.carousel--buttons {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
   .AKINHTA,
   .ΚΛΗΡΟΝΟΜΙΕΣ,
   .ΝΟΜΙΚΕΣΥΠΗΡΕΣΙΕΣ {
-    font-size: smaller;
+    font-size: small;
     position: absolute;
-    top: 15%;
+    top: 10%;
     width: 40%;
     height: 60%;
     background-color: rgba(217, 168, 101, 1);
@@ -358,11 +362,41 @@ main button:hover {
   .slide[data-active] {
     opacity: 1;
   }
-
   .carousel__btn {
     display: initial;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .carousel__btn {
+    display: none;
+  }
+
+  .carousel--buttons {
+    display: initial;
+    position: absolute;
+    bottom: 5%;
+  }
+
+  .carousel--buttons > * {
+    margin-left: 15px;
+    padding: 1em;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .carousel--btn0:hover,
+  .carousel--btn1:hover,
+  .carousel--btn2:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel--btnCurrent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
 /*  */
 /*  */
 
@@ -561,7 +595,7 @@ iframe {
   }
   .leftTitles {
     margin-top: 5em;
-    margin-left: 9%;
+    margin-left: 11%;
     font-size: 70%;
   }
   .rightTitles a::after {
