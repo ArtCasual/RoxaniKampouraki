@@ -267,6 +267,7 @@ main button:hover {
 }
 .modal__container > p {
   font-weight: bold;
+  font-size: larger;
 }
 
 .AKINHTA {
@@ -293,9 +294,9 @@ main button:hover {
 .modal__container {
   position: absolute;
   background-color: white;
-  min-width: 90%;
-  min-height: 90%;
-  border: solid 2px #652c2f;
+  min-width: 100%;
+  min-height: 100%;
+  border: solid 3px #652c2f;
   border-radius: 10px;
   left: 50;
   top: 50;
@@ -303,6 +304,8 @@ main button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+.modal--hidden {
   display: none;
 }
 
@@ -315,6 +318,7 @@ main button:hover {
 
 .modal__close {
   font-size: 2rem;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   background: none;
@@ -343,7 +347,6 @@ main button:hover {
   justify-content: space-evenly;
   text-align: center;
   position: relative;
-
   flex-basis: 33%;
   background-color: rgba(217, 168, 101, 0.8);
   padding: 2.5em;

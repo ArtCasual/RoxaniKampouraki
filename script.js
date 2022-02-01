@@ -91,3 +91,23 @@ carouselSec.addEventListener("click", (e) => {
     dotIndicatorExchange(dotIndicator);
   }
 });
+
+// Modal__Cards
+
+const openModalLinks = document.querySelectorAll(".modal__open");
+const closeModalButtons = document.querySelectorAll(".modal__close")
+
+openModalLinks.forEach(link => {
+  link.addEventListener("click", () => {
+  const modal = link.nextElementSibling;
+  modal.classList.remove("modal--hidden");
+})
+});
+
+closeModalButtons.forEach(button => {
+ button.addEventListener("click", () => {
+  const modal = button.closest(".modal__container");
+  modal.classList.add("modal--hidden");
+})
+});
+
