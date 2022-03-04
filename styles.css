@@ -38,16 +38,18 @@ footer p {
   header {
     font-size: smaller;
     line-height: 20px;
+    max-width: 99.5vw;
   }
   header img {
     transform: scale(0.7) translateX(-10px);
     margin: 0;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   header {
     font-size: 50%;
     line-height: 15px;
+    max-width: 99.5vw;
   }
   header img {
     transform: scale(0.6) translateX(-10px);
@@ -216,6 +218,12 @@ main button:hover {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 900px) and (max-height: 500px) {
+  #ΑΡΧΙΚΗ {
+    min-height: 150vh;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   #ΑΡΧΙΚΗ .txtHero {
     font-size: 110%;
@@ -234,6 +242,10 @@ main button:hover {
   main button {
     font-size: small;
     margin-top: 1em;
+  }
+
+  #ΑΡΧΙΚΗ {
+    min-height: 80vh;
   }
 }
 
@@ -285,7 +297,7 @@ main button:hover {
 }
 
 .AKINHTA h2 {
-  margin-top: 1.8em;
+  margin-top: 1.9em;
 }
 .AKINHTA li {
   transform: translateX(-10%);
@@ -389,6 +401,11 @@ main button:hover {
   display: none;
 }
 
+@media only screen and (max-width: 900px) and (max-height: 500px) {
+  .CARDBOX {
+    min-height: 160vh;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .AKINHTA,
   .ΚΛΗΡΟΝΟΜΙΕΣ,
@@ -401,15 +418,13 @@ main button:hover {
     background-color: rgba(217, 168, 101, 1);
     padding: 3em;
   }
-  .AKINHTA {
-    z-index: 1;
-  }
 
   .slide {
     opacity: 0;
   }
   .slide[data-active] {
     opacity: 1;
+    z-index: 1;
   }
   .carousel__btn {
     display: initial;
@@ -670,6 +685,7 @@ iframe {
   footer {
     font-size: smaller;
     line-height: 20px;
+    max-width: 99.5vw;
   }
   footer img {
     transform: scale(0.7) translateX(-10px);
@@ -679,10 +695,11 @@ iframe {
     height: 0.2em;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   footer {
     font-size: 50%;
     line-height: 15px;
+    max-width: 99.5vw;
   }
   footer img {
     transform: scale(0.6) translateX(-10px);

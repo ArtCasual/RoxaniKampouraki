@@ -73,41 +73,36 @@ carouselSec.addEventListener("click", (e) => {
   const targetDot = e.target;
   const targetIndex = carouselButtons.findIndex((btn) => btn === targetDot);
 
-  function dotIndicatorExchange(center) {
-    center.nextElementSibling.classList.remove("carousel--btnCurrent");
-    center.previousElementSibling.classList.remove("carousel--btnCurrent");
-  }
-
   if (!slides.children[targetIndex].dataset.active) {
     delete activeSlide.dataset.active;
     slides.children[targetIndex].dataset.active = true;
   }
-
   if (
     !carouselButtons[targetIndex].classList.contains("carousel--btnCurrent")
   ) {
+    carouselButtons.forEach((Dot) =>
+      Dot.classList.remove("carousel--btnCurrent")
+    );
     carouselButtons[targetIndex].classList.add("carousel--btnCurrent");
     dotIndicator = carouselSec.querySelector(`.carousel--btn${targetIndex}`);
-    dotIndicatorExchange(dotIndicator);
   }
 });
 
 // Modal__Cards
 
 const openModalLinks = document.querySelectorAll(".modal__open");
-const closeModalButtons = document.querySelectorAll(".modal__close")
+const closeModalButtons = document.querySelectorAll(".modal__close");
 
-openModalLinks.forEach(link => {
+openModalLinks.forEach((link) => {
   link.addEventListener("click", () => {
-  const modal = link.nextElementSibling;
-  modal.classList.remove("modal--hidden");
-})
+    const modal = link.nextElementSibling;
+    modal.classList.remove("modal--hidden");
+  });
 });
 
-closeModalButtons.forEach(button => {
- button.addEventListener("click", () => {
-  const modal = button.closest(".modal__container");
-  modal.classList.add("modal--hidden");
-})
+closeModalButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = button.closest(".modal__container");
+    modal.classList.add("modal--hidden");
+  });
 });
-
