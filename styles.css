@@ -539,7 +539,7 @@ iframe {
 
 @media only screen and (max-width: 900px) {
   .info {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   #ΕΠΙΚΟΙΝΩΝΙΑ {
     font-size: 0.9em;
@@ -549,6 +549,7 @@ iframe {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
   }
 
   .sideNav {
