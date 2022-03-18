@@ -178,7 +178,7 @@ nav a:hover::after {
   }
 }
 #ΑΡΧΙΚΗ {
-  background-image: url(./img/hero.png);
+  background-image: url(./img/heroEdit.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ nav a:hover::after {
   letter-spacing: 1px;
   position: absolute;
   text-align: center;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-top: 1.5em;
@@ -289,7 +289,7 @@ main button:hover {
   position: relative;
   justify-content: space-evenly;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.8);
+  background-color: rgba(217, 168, 101, 1);
   padding: 2.5em;
   border-radius: 10px;
   text-align: center;
@@ -305,10 +305,10 @@ main button:hover {
 
 .modal__container {
   position: absolute;
-  background-color: white;
+  background-color: rgb(218, 178, 125);
   min-width: 100%;
   min-height: 100%;
-  border: solid 3px #652c2f;
+  border: solid 4px #652c2f;
   border-radius: 10px;
   left: 50;
   top: 50;
@@ -343,7 +343,7 @@ main button:hover {
   position: relative;
   text-align: center;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.8);
+  background-color: rgba(217, 168, 101, 1);
   padding: 2.5em;
   border-radius: 10px;
   box-shadow: 10px 10px 8px #888888;
@@ -360,7 +360,7 @@ main button:hover {
   text-align: center;
   position: relative;
   flex-basis: 33%;
-  background-color: rgba(217, 168, 101, 0.8);
+  background-color: rgba(217, 168, 101, 1);
   padding: 2.5em;
   border-radius: 10px;
   box-shadow: 10px 10px 8px #888888;
@@ -474,8 +474,17 @@ main button:hover {
   color: inherit;
 }
 
-#ΕΠΙΚΟΙΝΩΝΙΑ a:hover {
+.links--hover:hover {
   background-color: white;
+}
+
+#number--icon {
+  align-self: center;
+}
+
+#email--icon {
+  align-self: center;
+  margin-top: 0.5rem;
 }
 
 #ΕΠΙΚΟΙΝΩΝΙΑ h1 {
