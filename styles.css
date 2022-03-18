@@ -39,7 +39,7 @@ footer p {
   header {
     font-size: smaller;
     line-height: 20px;
-    max-width: 99.5vw;
+    /* max-width: 99.5vw; */
   }
   header img {
     transform: scale(0.7) translateX(-10px);
@@ -696,7 +696,7 @@ iframe {
   footer {
     font-size: smaller;
     line-height: 20px;
-    max-width: 99.5vw;
+    /* max-width: 99.5vw; */
   }
   footer img {
     transform: scale(0.7) translateX(-10px);
@@ -710,7 +710,7 @@ iframe {
   footer {
     font-size: 50%;
     line-height: 15px;
-    max-width: 99.5vw;
+    /* max-width: 99.5vw; */
   }
   footer img {
     transform: scale(0.6) translateX(-10px);
