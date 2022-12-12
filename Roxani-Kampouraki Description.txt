@@ -1,0 +1,3 @@
+I was asked to create a simple but efficient Landing Page for a highly successful Notary and Legal Advises company based in Thessaloniki, Greece.
+The goal was to build a custom responsive website using HTML/CSS and miltiple custom functionalities using Javascript in order to make a fast and reliable website to provide better communication between the 
+staff of  the busy Notary Office  and their clients without hustle.

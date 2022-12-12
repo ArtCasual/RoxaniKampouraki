@@ -580,10 +580,9 @@ iframe {
 }
 .ΧΡΗΣΙΜΟΙΣΥΝΔΕΣΜΟΙ::after {
   content: "";
-  background-image: url(./img/Untitled.png);
+  background-image: url(./img/plateia-aristotelous\ 1.png);
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
   position: absolute;
   top: 0;
   left: 0;
