@@ -11,6 +11,7 @@ body {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
   zoom: 90%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 header,
@@ -99,6 +100,11 @@ nav a:hover::after {
   transform-origin: left;
 }
 
+.btnCallEmail a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .burger {
   position: absolute;
   visibility: hidden;
@@ -121,14 +127,14 @@ nav a:hover::after {
 }
 
 @media only screen and (max-width: 700px) {
-  .jsTest {
+  .navContainer {
     flex-direction: column;
     gap: 1em;
     margin-top: 0;
     /* height for links grows */
     height: 1.3em;
   }
-  .jsTest[data-show="true"] {
+  .navContainer[data-show="true"] {
     height: auto;
   }
 
@@ -184,7 +190,7 @@ nav a:hover::after {
   background-position: center;
   background-repeat: no-repeat;
   /* max-width: 100vw; */
-  min-height: 83vh;
+  min-height: 86vh;
   position: relative;
 }
 
@@ -246,7 +252,7 @@ main button:hover {
   }
 
   #ΑΡΧΙΚΗ {
-    min-height: 80vh;
+    min-height: 86vh;
   }
 }
 
@@ -254,7 +260,7 @@ main button:hover {
 /*  */
 
 .CARDBOX {
-  min-height: 100vh;
+  min-height: 111vh;
   line-height: 1.3em;
   background-color: rgba(217, 168, 101, 0.3);
   display: flex;
@@ -466,6 +472,7 @@ main button:hover {
 /*  */
 
 #ΕΠΙΚΟΙΝΩΝΙΑ {
+  scroll-margin-top: 1em;
   min-height: 100vh;
   background-color: rgba(217, 168, 101, 0.3);
   font-size: 1.2em;
@@ -495,7 +502,7 @@ main button:hover {
   text-align: center;
   border-bottom: 2px solid black;
   padding: 1em;
-  padding-top: 5em;
+  padding-top: 3em;
   margin-bottom: 2em;
 }
 
@@ -573,7 +580,7 @@ iframe {
 /*  */
 
 .ΧΡΗΣΙΜΟΙΣΥΝΔΕΣΜΟΙ {
-  min-height: 95vh;
+  min-height: 79vh;
   display: flex;
   justify-content: space-evenly;
   position: relative;
@@ -683,10 +690,23 @@ iframe {
 /*  */
 
 .footerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(217, 168, 101, 0.5);
   height: 3em;
 }
+.footDiv__p {
+  letter-spacing: 3px;
+  font-size: 0.7em;
+  padding: 0;
+  margin: 0;
+}
 
+.whiteDiv {
+  height: 1.5em;
+  background-color: white;
+}
 .lastDiv {
   height: 1.5em;
   background-color: white;

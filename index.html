@@ -1,188 +1,239 @@
 <!DOCTYPE html>
 <html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ρωξάνη Καμπουράκη-Αλιβάνη</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <p><strong>Ρωξάνη Καμπουράκη-Αλιβάνη</strong><br>Συμβολαιογράφος</p>
-        <br>
-        <img src="./img/LOGO.png" width="160px" alt="logo">
-        <br>
-        <p>Mητροπόλεως 25<br><strong>Θεσσαλονίκη 2310-223510</strong></p>
-</header>
-<nav class="jsTest" data-show = "false">
-    <a href="#ΑΡΧΙΚΗ" id="link1" data-show="false">ΑΡΧΙΚΗ</a>
-    <a href="#ΥΠΗΡΕΣΙΕΣ" id ="link2"data-show="false">ΥΠΗΡΕΣΙΕΣ</a>
-    <a href="#ΕΠΙΚΟΙΝΩΝΙΑ"id ="link3"data-show="false">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-    <a href="#ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ" id="link4" data-show="false">ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ</a>
-  <div class="burger show"data-show="false"> 
-   <div></div>
-   <div></div>
-   <div></div>
- </div> 
-  <div class="closeX"data-show="false">
-  <div class="xline1"></div>
- </div>
-</nav>
-<main id ="ΑΡΧΙΚΗ">  
-    <div class="txtHero">
-      <p>Η συμβολαιογράφος Ρωξάνη Καμπουράκη-Αλιβάνη διατηρεί εδώ και αρκετά χρόνια το γραφείο της στην Θεσσαλονίκη, παρέχοντας συμβολαιογραφικές υπηρεσίες υψηλού επιπέδου σε φυσικά και νομικά πρόσωπα ιδιωτικού και δημοσίου δικαίου.
+      <p><strong>Ρωξάνη Καμπουράκη-Αλιβάνη</strong><br />Συμβολαιογράφος</p>
+      <br />
+      <img src="./img/LOGO.png" width="160px" alt="logo" />
+      <br />
+      <p>Mητροπόλεως 25<br /><strong>Θεσσαλονίκη 2310-223510</strong></p>
+    </header>
+    <nav class="navContainer" data-show="false">
+      <a href="#ΑΡΧΙΚΗ" id="link1" data-show="false">ΑΡΧΙΚΗ</a>
+      <a href="#ΥΠΗΡΕΣΙΕΣ" id="link2" data-show="false">ΥΠΗΡΕΣΙΕΣ</a>
+      <a href="#ΕΠΙΚΟΙΝΩΝΙΑ" id="link3" data-show="false">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+      <a href="#ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ" id="link4" data-show="false"
+        >ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ</a
+      >
+      <div class="burger show" data-show="false">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="closeX" data-show="false">
+        <div class="xline1"></div>
+      </div>
+    </nav>
+    <main id="ΑΡΧΙΚΗ">
+      <div class="txtHero">
+        <p>
+          Η συμβολαιογράφος Ρωξάνη Καμπουράκη-Αλιβάνη διατηρεί εδώ και αρκετά
+          χρόνια το γραφείο της στην Θεσσαλονίκη, παρέχοντας συμβολαιογραφικές
+          υπηρεσίες υψηλού επιπέδου σε φυσικά και νομικά πρόσωπα ιδιωτικού και
+          δημοσίου δικαίου.
+        </p>
+        <button class="btnCallEmail">
+          <a href="tel:2310223520">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</a>
+        </button>
+      </div>
+    </main>
+    <div class="whiteDiv"></div>
+    <section id="ΥΠΗΡΕΣΙΕΣ">
+      <div class="CARDBOX">
+        <button class="carousel__btn prev" data-button="prev">&#8656;</button>
+        <button class="carousel__btn next" data-button="next">&#8658;</button>
+        <div class="container carousel" data-slides>
+          <div class="AKINHTA slide" data-active>
+            <img src="./img/property 1.png" width="145px" />
+            <h2>AKINHTA</h2>
+            <ul>
+              <li>Προσύμφωνα</li>
+              <li>Αγοραπωλησίες</li>
+              <li>Δωρεές</li>
+              <li>Γονικές Παροχές</li>
+              <li>Συστάσεις οριζόντιων<br />κάθετων ιδιοκτησιών</li>
+            </ul>
+            <span class="modal__open link" data-modal-target="#akinita"
+              >(απαραίτητα δικαιολογητικά...)</span
+            >
+            <div
+              class="modal__container modal--hidden"
+              id="akinita"
+              data-modal0
+            >
+              <!-- <h2>ΑΚΙΝΗΤΑ</h2> -->
+              <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
+              <ul>
+                <li>(ταυτότητα)</li>
+                <li>(αποδεικτικό ΑΦΜ)</li>
+                <li>(αποδεικτικό ΑΜΚΑ)</li>
+                <li>(πρόσφατη φορολογική δήλωση)</li>
+              </ul>
+              <button class="modal__close button">&times;</button>
+            </div>
+          </div>
+          <div class="ΚΛΗΡΟΝΟΜΙΕΣ slide">
+            <img src="./img/notary 1.png" width="145px" />
+            <h2>ΚΛΗΡΟΝΟΜΙΕΣ</h2>
+            <ul>
+              <li>Δημόσιες Διαθήκες</li>
+              <li>Ανάληψη Διαθηκών</li>
+              <li>Κατάθεση Διαθηκών</li>
+              <li>Αποδοχή Κληρονομιάς</li>
+              <li>Απογραφή Κληρονομιάς</li>
+            </ul>
+            <span class="modal__open link">(απαραίτητα δικαιολογητικά...)</span>
+            <div class="modal__container klironomies modal--hidden">
+              <!-- <h2>ΚΛΗΡΟΝΟΜΙΕΣ</h2> -->
+              <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
+              <ul>
+                <li>(ταυτότητα)</li>
+                <li>(αποδεικτικό ΑΦΜ)</li>
+                <li>(αποδεικτικό ΑΜΚΑ)</li>
+                <li>(πρόσφατη φορολογική δήλωση)</li>
+              </ul>
+              <button class="modal__close button">&times;</button>
+            </div>
+          </div>
+          <div class="ΝΟΜΙΚΕΣΥΠΗΡΕΣΙΕΣ slide">
+            <img class="moveImg" src="./img/stamp 1.png" width="145px" />
+            <h2>ΝΟΜΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</h2>
+            <ul>
+              <li>Συναινετικό Διαζύγιο</li>
+              <li>Σύμφωνο Διαβίωσης</li>
+              <li>Αναγνώριση Τέκνων</li>
+              <li>Πληρεξούσια</li>
+              <li>Κατοχύρωση Δικαιωμάτων</li>
+            </ul>
+            <span class="modal__open link">(απαραίτητα δικαιολογητικά...)</span>
+            <div class="modal__container nomikes modal--hidden">
+              <!-- <h2>ΝΟΜΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</h2> -->
+              <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
+              <ul>
+                <li>(ταυτότητα)</li>
+                <li>(αποδεικτικό ΑΦΜ)</li>
+                <li>(αποδεικτικό ΑΜΚΑ)</li>
+                <li>(πρόσφατη φορολογική δήλωση)</li>
+              </ul>
+              <button class="modal__close button">&times;</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel--buttons">
+          <button class="carousel--btn0"></button>
+          <button class="carousel--btn1"></button>
+          <button class="carousel--btn2"></button>
+        </div>
+      </div>
+    </section>
+    <section id="ΕΠΙΚΟΙΝΩΝΙΑ">
+      <div>
+        <h1>Συμβολαιογραφείο Ρωξάνης Καμπουράκη-Αλιβάνη</h1>
+      </div>
+      <div class="info">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8364992872825!2d22.93808221540257!3d40.63348757934049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a83908673156a1%3A0xafaf00a4be097f83!2zzpzOt8-Ez4HOv8-Az4zOu861z4nPgiAyNSwgzpjOtc-Dz4POsc67zr_Ovc6vzrrOtyA1NDYgMjQ!5e0!3m2!1sel!2sgr!4v1637337695636!5m2!1sel!2sgr"
+          width="500"
+          height="470"
+          allowfullscreen="true"
+          loading="lazy"
+        ></iframe>
+        <div class="sideNav">
+          <div class="number">
+            <a href="tel:+302310223520" id="number--icon"
+              ><img src="./img/Vector.svg"
+            /></a>
+            <p>
+              <a href="tel:+302310223520" class="links--hover">2310-223520</a>
+              <br />
+              <a href="tel:+302310-223510" class="links--hover"
+                >2310-223510 FAX</a
+              >
+            </p>
+          </div>
+          <div class="email">
+            <a href="mailto:alivanis@otenet.gr" id="email--icon"
+              ><img src="./img/Vector-1.svg"
+            /></a>
+            <p>
+              <a href="mailto:alivanis@otenet.gr" class="links--hover"
+                >alivanis@otenet.gr</a
+              >
+            </p>
+          </div>
+          <div class="address">
+            <img src="./img/Vector-2.svg" />
+            <p>
+              Μητροπόλεως 25<br />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=40.632783,22.945216"
+              ></a>
+              Κέντρο Θεσ/νικης<br />
+              4ος όροφος<br />
+              Τ.Κ. 54624
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="whiteDiv"></div>
+    <section id="ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ" class="ΧΡΗΣΙΜΟΙΣΥΝΔΕΣΜΟΙ">
+      <div class="leftTitles">
+        <h1>ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ :</h1>
+        <h1>ΔΙΚΑΣΤΙΚΕΣ ΑΡΧΕΣ :</h1>
+        <h1>ΣΧΕΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ :</h1>
+      </div>
+      <div class="rightTitles">
+        <div class="rightTitles1">
+          <a target="_blank" href="https://www.gov.gr">Κυβέρνηση (gov.gr)</a>
+          <a target="_blank" href="https://www.gsis.gr"
+            >Γενική Γραμματεία Πληροφοριακών Συστημάτων (gsis.gr)</a
+          >
+          <a target="_blank" href="http://www.opengov.gr/home/"
+            >Ανοιχτή Διακυβέρνηση (OpenGov.gr)</a
+          >
+        </div>
+        <div class="rightTitles2">
+          <a target="_blank" href="http://www.areiospagos.gr">Άρειος Παγος</a>
+          <a target="_blank" href="https://www.protodikeio-thes.gr"
+            >Πρωτοδικείο Θεσσαλονίκης</a
+          >
+          <a target="_blank" href="http://www.efeteio-thess.gr/web/"
+            >Εφετείο Θεσσαλονίκης</a
+          >
+        </div>
+        <div class="rightTitles3">
+          <a target="_blank" href="https://thessaloniki.gr"
+            >Δήμος Θεσσαλονίκης</a
+          >
+          <a target="_blank" href="https://www.ktimatologio.gr/el"
+            >Εθνικό Κτηματολόγιο</a
+          >
+          <a target="-blank" href="http://www.ypothes.gr/ypothes/"
+            >Υποθηκοφυλάκειο Θεσσαλονίκης</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="footerDiv">
+      <p class="footDiv__p">
+        Copyright &copy;2023 ArtCasual.All Rights Reserved
       </p>
-      <button>
-        ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-      </button>
     </div>
-  </div>
-</main>
-<section id ="ΥΠΗΡΕΣΙΕΣ">
- <div class="CARDBOX">
-   <button class="carousel__btn prev" data-button="prev">&#8656</button>
-   <button class="carousel__btn next" data-button="next">&#8658</button>
-   <div class="container carousel" data-slides>
-    <div class="AKINHTA slide" data-active>
-      <img src="./img/property 1.png" width="145px">
-      <h2>AKINHTA</h2>
-      <ul>
-       <li>Προσύμφωνα</li>    
-       <li>Αγοραπωλησίες</li>
-       <li>Δωρεές</li>
-       <li>Γονικές Παροχές</li> 
-       <li>Συστάσεις οριζόντιων<br>κάθετων ιδιοκτησιών</li>
-      </ul>
-      <span class="modal__open link" data-modal-target="#akinita">(απαραίτητα δικαιολογητικά...)</span>
-      <div class="modal__container  modal--hidden" id="akinita" data-modal0 >
-        <!-- <h2>ΑΚΙΝΗΤΑ</h2> -->
-        <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
-        <ul>
-          <li>(ταυτότητα)</li>
-          <li>(αποδεικτικό ΑΦΜ)</li>
-          <li>(αποδεικτικό ΑΜΚΑ)</li>
-          <li>(πρόσφατη φορολογική δήλωση)</li>
-        </ul>
-        <button class="modal__close button">&times;</button>
-      </div>
-    </div>
-    <div class="ΚΛΗΡΟΝΟΜΙΕΣ slide">
-      <img src="./img/notary 1.png" width="145px">
-      <h2>ΚΛΗΡΟΝΟΜΙΕΣ</h2>
-      <ul>
-        <li>Δημόσιες Διαθήκες</li>
-        <li>Ανάληψη Διαθηκών</li>
-        <li>Κατάθεση Διαθηκών</li>
-        <li>Αποδοχή Κληρονομιάς</li>
-        <li>Απογραφή Κληρονομιάς</li>
-      </ul>
-      <span class="modal__open link">(απαραίτητα δικαιολογητικά...)</span>
-      <div class="modal__container klironomies modal--hidden">
-        <!-- <h2>ΚΛΗΡΟΝΟΜΙΕΣ</h2> -->
-        <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
-        <ul>
-          <li>(ταυτότητα)</li>
-          <li>(αποδεικτικό ΑΦΜ)</li>
-          <li>(αποδεικτικό ΑΜΚΑ)</li>
-          <li>(πρόσφατη φορολογική δήλωση)</li>
-        </ul>
-        <button class="modal__close button">&times;</button>
-      </div>
-    </div>
-    <div class="ΝΟΜΙΚΕΣΥΠΗΡΕΣΙΕΣ slide">
-      <img class="moveImg" src="./img/stamp 1.png" width="145px">
-      <h2> ΝΟΜΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</h2>
-      <ul>
-        <li>Συναινετικό Διαζύγιο</li>
-        <li>Σύμφωνο Διαβίωσης</li>
-        <li>Αναγνώριση Τέκνων</li>
-        <li>Πληρεξούσια</li>
-        <li>Κατοχύρωση Δικαιωμάτων</li>
-      </ul>
-      <span class="modal__open link">(απαραίτητα δικαιολογητικά...)</span>
-      <div class="modal__container nomikes modal--hidden">
-        <!-- <h2>ΝΟΜΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</h2> -->
-        <p>ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</p>
-        <ul>
-          <li>(ταυτότητα)</li>
-          <li>(αποδεικτικό ΑΦΜ)</li>
-          <li>(αποδεικτικό ΑΜΚΑ)</li>
-          <li>(πρόσφατη φορολογική δήλωση)</li>
-        </ul>
-        <button class="modal__close button">&times;</button>
-      </div>
-    </div>
-   </div>
-   <div class="carousel--buttons">
-    <button class="carousel--btn0"></button>
-    <button class="carousel--btn1"></button>
-    <button class="carousel--btn2"></button>
-   </div>
- </div>
-</section>
-<section id="ΕΠΙΚΟΙΝΩΝΙΑ">
-  <div>
-   <h1>Συμβολαιογραφείο Ρωξάνης Καμπουράκη-Αλιβάνη</h1>
-  </div>
-  <div class="info">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8364992872825!2d22.93808221540257!3d40.63348757934049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a83908673156a1%3A0xafaf00a4be097f83!2zzpzOt8-Ez4HOv8-Az4zOu861z4nPgiAyNSwgzpjOtc-Dz4POsc67zr_Ovc6vzrrOtyA1NDYgMjQ!5e0!3m2!1sel!2sgr!4v1637337695636!5m2!1sel!2sgr"
-      width="500" height="470" allowfullscreen="true" loading="lazy"></iframe>
-    <div class="sideNav"> 
-      <div class="number">
-        <a href="tel:+302310223520" id="number--icon"><img src="./img/Vector.svg"></a>
-        <p><a href="tel:+302310223520" class="links--hover">2310-223520</a><br>2310-223510 FAX</p>
-      </div>
-      <div class="email">
-        <a href="mailto:alivanis@otenet.gr"id="email--icon"><img src="./img/Vector-1.svg"></a>
-        <p><a href="mailto:alivanis@otenet.gr"class="links--hover">alivanis@otenet.gr</a></p>
-      </div>
-      <div class="address">
-        <img src="./img/Vector-2.svg">
-        <p>Μητροπόλεως 25<br>
-          Κέντρο Θεσ/νικης<br>
-          4ος όροφος<br>
-          Τ.Κ. 54624</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ" class="ΧΡΗΣΙΜΟΙΣΥΝΔΕΣΜΟΙ">
- <div class="leftTitles">
-   <h1>ΕΛΛΗΝΙΚΗ ΔΗΜΟΚΡΑΤΙΑ :</h1>
-   <h1>ΔΙΚΑΣΤΙΚΕΣ ΑΡΧΕΣ :</h1>
-   <h1>ΣΧΕΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ :</h1>
- </div>
- <div class="rightTitles">
-   <div class="rightTitles1">
-    <a target="_blank" href="https://www.gov.gr">Κυβέρνηση (gov.gr)</a>
-    <a target="_blank" href="https://www.gsis.gr">Γενική Γραμματεία Πληροφοριακών Συστημάτων (gsis.gr)</a>
-    <a target="_blank" href="http://www.opengov.gr/home/">Ανοιχτή Διακυβέρνηση (OpenGov.gr)</a>
-   </div>
-   <div class="rightTitles2">
-    <a target="_blank" href="http://www.areiospagos.gr">Άρειος Παγος</a>
-    <a target="_blank" href="https://www.protodikeio-thes.gr">Πρωτοδικείο Θεσσαλονίκης</a>
-    <a target="_blank" href="http://www.efeteio-thess.gr/web/">Εφετείο Θεσσαλονίκης</a>
-   </div>
-   <div class="rightTitles3">
-    <a target="_blank" href="https://thessaloniki.gr">Δήμος Θεσσαλονίκης</a>
-    <a target="_blank" href="https://www.ktimatologio.gr/el">Εθνικό Κτηματολόγιο</a>
-    <a target="-blank" href="http://www.ypothes.gr/ypothes/">Υποθηκοφυλάκειο Θεσσαλονίκης</a>
-   </div>
- </div>
-</section>
-<div class="footerDiv">
-</div>
-<footer>
- <p><strong>Ρωξάνη Καμπουράκη-Αλιβάνη</strong><br>Συμβολαιογράφος</p>
-        <br>
-        <img src="./img/LOGO.png" width="160px" alt="logo">
-        <br>
-        <p>Mητροπόλεως 25<br><strong>Θεσσαλονίκη 2310-223510</strong></p>
-</footer>
-<div class="lastDiv">
-</div>
-<script src="script.js"></script>
-</body>
+    <footer>
+      <p><strong>Ρωξάνη Καμπουράκη-Αλιβάνη</strong><br />Συμβολαιογράφος</p>
+      <br />
+      <img src="./img/LOGO.png" width="160px" alt="logo" />
+      <br />
+      <p>Mητροπόλεως 25<br /><strong>Θεσσαλονίκη 2310-223510</strong></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-
