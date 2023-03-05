@@ -100,6 +100,10 @@ nav a:hover::after {
   transform-origin: left;
 }
 
+.btnCallEmail {
+  margin-top: 2em;
+}
+
 .btnCallEmail a {
   text-decoration: none;
   color: inherit;
@@ -133,9 +137,11 @@ nav a:hover::after {
     margin-top: 0;
     /* height for links grows */
     height: 1.3em;
+    transition: all 1s ease-in-out;
   }
   .navContainer[data-show="true"] {
     height: auto;
+    transition: all 1s ease-in-out;
   }
 
   /* LinksShow */
@@ -185,7 +191,7 @@ nav a:hover::after {
   }
 }
 #ΑΡΧΙΚΗ {
-  background-image: url(./img/heroEdit.png);
+  background-image: url(./img/heroEditPhotoshop.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
