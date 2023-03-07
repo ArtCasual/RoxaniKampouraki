@@ -70,12 +70,11 @@ function touchStart(e) {
 function touchEnd(e) {
   endPos = getPositionXEnd(e);
   let distance = endPos - startPos;
-  console.log(distance);
   if (distance > 70) {
-    offset = 1;
+    offset = -1;
     touchSLide(offset);
   } else if (distance < -70) {
-    offset = -1;
+    offset = 1;
     touchSLide(offset);
   }
 }
@@ -84,6 +83,7 @@ function touchEnd(e) {
 
 const slidesContainer = document.querySelector("[data-slides");
 const slides = [...slidesContainer.children];
+console.log(slidesContainer.children, slides);
 slides.forEach((slide) => {
   slide.addEventListener("touchstart", touchStart);
   slide.addEventListener("touchend", touchEnd);
@@ -98,17 +98,21 @@ buttons.forEach((button) => {
 // Next Button plus counter
 function touchSLide(offset) {
   const activeSlide = slidesContainer.querySelector("[data-active]");
-  let newIndex = [...slides].indexOf(activeSlide) + offset;
+  let newIndex = slides.indexOf(activeSlide) + offset;
   if (newIndex < 0) newIndex = slides.length - 1;
   if (newIndex >= slides.length) newIndex = 0;
   slides[newIndex].dataset.active = true;
   delete activeSlide.dataset.active;
+  carouselButtons.forEach((dot) =>
+    dot.classList.remove("carousel--btnCurrent")
+  );
+  carouselButtons[newIndex].classList.add("carousel--btnCurrent");
 }
 
 function changeSlide(button) {
   let offset = button.dataset.button === "next" ? 1 : -1;
   const activeSlide = slidesContainer.querySelector("[data-active]");
-  let newIndex = [...slides].indexOf(activeSlide) + offset;
+  let newIndex = slides.indexOf(activeSlide) + offset;
   if (newIndex < 0) newIndex = slides.length - 1;
   if (newIndex >= slides.length) newIndex = 0;
   slides[newIndex].dataset.active = true;
@@ -119,6 +123,7 @@ function changeSlide(button) {
 
 const carouselSec = document.querySelector(".carousel--buttons");
 const carouselButtons = Array.from(carouselSec.children);
+carouselButtons[0].classList.add("carousel--btnCurrent");
 
 carouselSec.addEventListener("click", (e) => {
   const slides = document.querySelector("[data-slides");

@@ -267,6 +267,7 @@ main button:hover {
 
 .CARDBOX {
   min-height: 111vh;
+  letter-spacing: 1.5px;
   line-height: 1.3em;
   background-color: rgba(217, 168, 101, 0.3);
   display: flex;
@@ -463,11 +464,11 @@ main button:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
-  .carousel--btn0:hover,
+  /* .carousel--btn0:hover,
   .carousel--btn1:hover,
   .carousel--btn2:hover {
     background-color: rgba(0, 0, 0, 0.5);
-  }
+  } */
 
   .carousel--btnCurrent {
     background-color: rgba(0, 0, 0, 0.7);
